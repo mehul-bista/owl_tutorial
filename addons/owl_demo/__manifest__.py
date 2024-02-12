@@ -10,11 +10,12 @@
     'website': "https://www.yourcompany.com",
     'category': 'web',
     'version': '16.0',
-    'depends': ['base', 'mail'],
+    'depends': ['base', 'mail', 'contacts', 'sale_management'],
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/res_partner.xml',
     ],
     'demo': [
         'demo/demo.xml',
