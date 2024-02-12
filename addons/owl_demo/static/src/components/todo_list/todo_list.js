@@ -64,7 +64,7 @@ export class OwlTodoList extends Component {
     }
 
     resetFrom(){
-        this.state.task = {...task}
+        this.state.task = {name:"", color:"#FF0000", completed:false}
     }
 
     async deleteTask(task){

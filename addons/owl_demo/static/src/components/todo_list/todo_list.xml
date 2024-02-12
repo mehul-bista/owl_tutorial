@@ -5,14 +5,12 @@
         <div class="todo-list-container">
             <div class="row mx-2 mt-3">
                 <div class="col-lg-6">
-                    <button class="btn btn-primary" t-on-click="addTask" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        New
-                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" t-on-click="addTask">New</button>
                 </div>
                 <div class="col-lg-6">
                     <div class="input-group">
-                        <input type="text" class="form-control" t-ref="search-input" t-on-keyup="searchTasks" placeholder="Search..."/>
-                        <button class="btn btn-outline-primary" t-on-click="searchTasks"> Search </button>
+                        <input type="text" class="form-control" placeholder="Search here..." t-ref="search-input" t-on-keyup="searchTasks"/>
+                        <button class="btn btn-outline-primary" t-on-click="searchTasks">Search</button>
                     </div>
                 </div>
             </div>
@@ -24,7 +22,7 @@
                             <tr>
                                 <th scope="col">Task Description</th>
                                 <th scope="col">Completed</th>
-                                <th scope="col"></th>x
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
