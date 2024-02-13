@@ -16,6 +16,7 @@
         'views/views.xml',
         'views/res_partner.xml',
         'views/odoo_services.xml',
+        'views/external_libraries.xml',
     ],
     'demo': [
         'demo/demo.xml',
