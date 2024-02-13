@@ -10,13 +10,14 @@
     'website': "https://www.yourcompany.com",
     'category': 'web',
     'version': '16.0',
-    'depends': ['base', 'mail', 'contacts', 'sale_management'],
+    'depends': ['base', 'mail', 'contacts', 'sale_management', 'sale'],
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/res_partner.xml',
         'views/odoo_services.xml',
         'views/external_libraries.xml',
+        'views/sale_order.xml',
     ],
     'demo': [
         'demo/demo.xml',
